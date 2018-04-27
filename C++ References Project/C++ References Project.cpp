@@ -22,8 +22,8 @@ int main()
 
 	cout << "Operation Cuppa Joe.....Initialized.\n\n";
 	//I like having some form of personal element in my games, so I almost always include a username script of some kind and call it at random intervals to simulate a more personal experience
-	cout << "Welcome agent, please input your first name.\n";
-	cin >> userName;
+	userName = getTextFromUser("Welcome agent, please input your first name.\n");
+	
 	cout << "\nWelcome to this project, Agent " << userName << ".\n";
 	cout << "We have prepared for you an overview of this assignment. \nPlease type 'yes' to view the briefing, or type 'no' to skip it.\n\n";
 	cin >> answer1;
@@ -86,20 +86,22 @@ End:
 	system("pause");
 	return 0;
 }
-//successful transaction function
-void normalTrans(int& x, int& y)
-{
-	int temp = x;
-	x = y;
-	y = temp;
-}
-//hacked (unmotivated) transaction function
-void badTrans(int x, int y)
-{
-	int temp = x;
-	x = y;
-	y = temp;
-}
+
+////successful transaction function
+//void normalTrans(int& x, int& y)
+//{
+//	int temp = x;
+//	x = y;
+//	y = temp;
+//}
+//
+////hacked (unmotivated) transaction function
+//void badTrans(int x, int y)
+//{
+//	int temp = x;
+//	x = y;
+//	y = temp;
+//}
 
 //// C++ References Project.cpp : Defines the entry point for the console application.
 ////
